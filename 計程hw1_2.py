@@ -2,8 +2,8 @@ n = input("IPv4 network prefix length:")
 if n.isdigit() and 32>=int(n)>=0:
     n = int(n)
     binary_code = "1"*n + "0"*(32-n)
-    binary_code = int(binary_code)
     print(f"binary:{binary_code}")
+    binary_code = int(binary_code)
     ip = [0,0,0,0]
     for i in range(4):
         ip[i] = binary_code//(10**(8*(3-i)))
