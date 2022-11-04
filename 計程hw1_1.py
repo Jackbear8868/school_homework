@@ -7,8 +7,6 @@ def castle_builder(n):
         print(" "*(4*n+1),"|",sep="")
 
         for i in range(1,n+1):
-
-
             if i %2 ==1:
                 print(" "*(4*(n-i)+1),"_   "*(2*i+1),sep="")
                 print(" "*(4*(n-i)),"|X| "*(2*i+1),sep="")
